@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Калькулятор</title>
+    <style>
+        #calc{
+            border: 1px solid black;
+            padding: 2px;
+            padding-bottom: 4px;
+            width: 206px;
+            margin: 0 auto;
+            height: 230px;
+        }
+        .action{
+            width: 40px;
+			height: 30px;
+			line-height: 30px;
+			display: inline-block;
+			cursor: pointer;
+			border: 1px solid #000;
+			margin: 4px;
+			font-size: 16px;
+			text-align: center;
+			transition: background .1s,
+			color .1s;
+        }
+        .action:hover {
+			background: rgb(51, 49, 49);
+			color: #fff;}
+        #input{
+			display: block;
+			width: 185px;
+			height: 30px;
+			border: 1px solid #000;
+			margin: 0 auto;
+			margin: 4px;
+			text-align: right;
+			outline: 0;
+			background: #fff;
+			padding-right: 5px;
+        }
+        #cButton{
+            position: relative;
+			left: 6px;
+			top: 36px;
+			width: 20px;
+			height: 20px;
+			font-size: 12px;
+			line-height: 20px;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+<div id="calc">
+    <div id="str">
+        <button  id="cButton">C</button><input type="text" id="input">
+    </div>
+    <button class="action">7</button>
+    <button class="action">8</button>
+    <button class="action">9</button>
+    <button class="action">/</button>
+    <button class="action">4</button>
+    <button class="action">5</button>
+    <button class="action">6</button>
+    <button class="action">&times;</button>
+    <button class="action">1</button>
+    <button class="action">2</button>
+    <button class="action">3</button>
+    <button class="action">-</button>
+    <button class="action">0</button>
+    <button class="action"><b>.</b></button>
+    <button class="action"  id="equal">=</button>
+    <button class="action">+</button>
+</div>
+
+<script src="code.js"></script>
+</body>
+</html>
